@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:text="EYE CATARACTS DIAGNOSIS"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rectangle_white"
+        android:orientation="vertical"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/login_to_your_account"
+            android:textColor="@color/txt_black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rectangle_gray_border"
+            android:hint="@string/your_email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/ic_mail"/>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rectangle_gray_border"
+            android:hint="Your password"
+            android:paddingLeft="15dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="14sp"
+            android:drawableRight="@drawable/ic_lock"/>
+
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rectangle_pink"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/txt_continue"
+            android:id="@+id/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/or"
+            android:textColor="@color/txt_hint"
+            android:textSize="12sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/google"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:background="@drawable/rectangle_white_gray_border"-->
+<!--            android:drawableLeft="@drawable/ic_logo_google_color"-->
+<!--            android:drawablePadding="11.5dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:gravity="left|center"-->
+<!--            android:paddingLeft="55dp"-->
+<!--            android:paddingTop="12dp"-->
+<!--            android:paddingBottom="12dp"-->
+<!--            android:text="@string/continue_with_google"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/drak_gray"-->
+<!--            android:textSize="12sp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:background="@drawable/rectangle_white_gray_border"-->
+<!--            android:drawableLeft="@drawable/ic_facebook_icon"-->
+<!--            android:drawablePadding="11.5dp"-->
+<!--            android:fontFamily="@font/poppins_semibold"-->
+<!--            android:gravity="left|center"-->
+<!--            android:paddingLeft="42dp"-->
+<!--            android:paddingTop="12dp"-->
+<!--            android:paddingBottom="12dp"-->
+<!--            android:text="@string/continue_with_facebook"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/drak_gray"-->
+<!--            android:textSize="12sp" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/viewline_color" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15.5dp"
+            android:text="@string/can_t_login_sign_up_for_new_user"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/light_white"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/circle_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/terms_of_use"
+            android:textColor="@color/light_white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
